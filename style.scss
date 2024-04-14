@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+:root{
+    --azul-sereno: #6EB5FF;
+    --verde-suave: #B7E3A8;
+    --rosa-palido : #F4BBD3;
+    --cinza-claro: #CCCCCC;
+    --bege: #F2E8D7;
+    
+    
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+
+}
+
+section{
+    background-color: aqua;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    padding: 0 40px;
+    background: linear-gradient(to bottom, #ffffff, #f1ebeb, #4169E1);
+
+}
+
+.container-info{
+    width: 70%;
+
+    .info{
+        width: 70%;
+        margin: auto;
+        margin-top: 200px;
+        padding: 10px;
+    }
+
+    h1{
+        color: #020f36;
+        font-size: 90px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        color: rgb(0, 28, 80);
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    button {
+        background-color: #020f36;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        margin-top:30px;
+        width: 150px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #042075;
+    
+        }
+
+    }
+    
+}
+
+.container-login{
+    width: 30%;
+    padding: 200px 30px;
+   
+    
+
+    .login{
+        display: flex;
+        background-color: transparent;
+        flex-direction: column;
+        padding: 30px 5px;
+        width: 450px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        height: 40vh;
+        box-shadow: 10px  10px 10px 15px rgba(0, 0, 0, .212);
+    }
+    
+    h1 {
+        text-align: center;
+        color: #020f36;
+        width: 275px;
+        margin-bottom: 50px;
+      }
+      
+      p {
+        text-align: justify;
+        color:#020f36;
+        width: 275px;
+        margin-bottom: 30px;
+      }
+      
+      input {
+        background-color: transparent;
+        border-radius: 5px;
+        width: 275px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(184, 183, 183);
+        color: black;
+        box-shadow: 1px 1px 1px  rgba(0, 0, 0, .212);
+      }
+      
+      .btn-acessar {
+        width: 275px;
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: 1px solid rgb(184, 183, 183);
+        text-align: center;
+        text-decoration: none;
+        background-color: #020f36;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #042075;
+    
+        }
+      }
+      
+      .btn-criar-conta {
+        width: 275px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #020f36;
+        text-align: center;
+        text-decoration: none;
+        color: #020f36;
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (max-width: 400px){
+
+        body {
+            height: 100vh;
+            margin: 0;
+            width: 400px;
+        }
+        
+        section {
+            background-color: aqua;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #ffffff, #f1ebeb, #4169E1);
+        }
+        
+        .container-info {
+            width: 100%;
+        
+            .info {
+                width: 100%; /* Ajustando a largura para ocupar 100% */
+                margin: auto;
+                margin-top: 40px; /* Reduzindo a margem superior */
+    
+            }
+        
+            h1 {
+                color: #020f36;
+                font-size: 40px; /* Reduzindo o tamanho da fonte */
+                margin-bottom: 20px;
+            }
+        
+            p {
+                color: rgb(0, 28, 80);
+                font-size: 12px; /* Reduzindo o tamanho da fonte */
+                margin-top: 10px; /* Reduzindo a margem superior */
+            }
+        
+            a {
+                text-decoration: none;
+                color: white;
+
+               
+            }
+        
+            button {
+                background-color: #020f36;
+                padding: 5px;
+                border-radius: 8px;
+                border: none;
+                margin-top: 20px; /* Reduzindo a margem superior */
+                width: 70px; /* Reduzindo a largura do botão */
+                cursor: pointer;
+                font-size: 12px;
+                height: 3vh;
+
+
+            }
+        }
+        
+        .container-login {
+            width: 300px; 
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            padding: 0;
+        
+            .login {
+                display: flex;
+                background-color: transparent;
+                flex-direction: column;
+                padding: 30px 5px;
+                width: 100%; /* Ajustando a largura para ocupar 100% */
+                box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, .212);
+            }
+        
+            h1 {
+                text-align: center;
+                color: #020f36;
+                font-size: 24px; /* Reduzindo o tamanho da fonte */
+                margin-bottom: 30px; /* Reduzindo a margem inferior */
+            }
+        
+            p {
+                text-align: justify;
+                color: #020f36;
+                font-size: 14px; /* Reduzindo o tamanho da fonte */
+                margin-bottom: 20px; /* Reduzindo a margem inferior */
+            }
+        
+            input {
+                background-color: transparent;
+                border-radius: 5px;
+                border: none;
+                width: 80%; /* Ajustando a largura para ocupar 100% */
+                padding: 10px;
+                margin-bottom: 10px;
+                color: black;
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, .212);
+            }
+        
+            .btn-acessar {
+                width: 40%; /* Ajustando a largura para ocupar 100% */
+                padding: 10px;
+                margin-top: 20px; /* Reduzindo a margem superior */
+                border-radius: 5px;
+                text-align: center;
+                text-decoration: none;
+                background-color: #020f36;
+                color: white;
+                cursor: pointer;
+                border: none;
+            }
+        
+            .btn-criar-conta {
+                width: 50%; /* Ajustando a largura para ocupar 100% */
+                padding: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                border: 1px solid #020f36;
+                text-align: center;
+                text-decoration: none;
+                color: #020f36;
+                cursor: pointer;
+            }
+        }
+        
+
+
+
+
+    }
